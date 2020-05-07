@@ -30,7 +30,7 @@ def result():
         to_predict_list=list(to_predict_list.values())
         to_predict_list = list(map(int, to_predict_list))
         result = ValuePredictor(to_predict_list)
-        
+        print(result)
         if int(result)==1:
             prediction='Income more than 50K'
         else:
